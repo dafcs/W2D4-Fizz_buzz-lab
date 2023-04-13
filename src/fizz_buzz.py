@@ -10,11 +10,10 @@
 
 def fizz_buzz(dictionary,number):
     word = ""
-    for i in dictionary:
-        if number % i == 0:
-            word += dictionary[i]
+    for key in dictionary:
+        if number % key == 0:
+            word += dictionary[key]
     if word == "":
         return str(number)
     return word
-
 
